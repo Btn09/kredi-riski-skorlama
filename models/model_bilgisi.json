@@ -1,0 +1,23 @@
+{
+  "puan_esigi": 543.2,
+  "olasilik_esigi": 0.1254,
+  "ozellikler": [
+    "PAY_1",
+    "gecikme_ay_sayisi",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "LIMIT_BAL",
+    "PAY_AMT1",
+    "odeme_orani",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT6",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "kullanim_orani",
+    "fatura_egilimi"
+  ],
+  "kar_varsayimi": "iyi müşteri +1, temerrüt -5"
+}

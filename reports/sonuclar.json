@@ -1,0 +1,118 @@
+{
+  "satirlar": [
+    {
+      "model": "Skor kartı (WoE + lojistik regresyon)",
+      "dogrulama_auc": 0.7560251285624692,
+      "dogrulama_gini": 0.5120502571249383,
+      "dogrulama_ks": 0.3835761596666124,
+      "dogrulama_brier": 0.14089462195028685,
+      "test_auc": 0.7666324897747503,
+      "test_gini": 0.5332649795495006,
+      "test_ks": 0.41748062552420384,
+      "test_brier": 0.13606135641527664,
+      "test_onay_orani": 0.4036666666666667,
+      "test_onaylananda_temerrut": 0.09000825763831544,
+      "test_kar": 1114.0
+    },
+    {
+      "model": "Lojistik regresyon (ham özellikler)",
+      "dogrulama_auc": 0.7443670617543324,
+      "dogrulama_gini": 0.48873412350866485,
+      "dogrulama_ks": 0.38479320749593093,
+      "dogrulama_brier": 0.1438148952426526,
+      "test_auc": 0.7623496812082945,
+      "test_gini": 0.524699362416589,
+      "test_ks": 0.42217932998993235,
+      "test_brier": 0.13859100695714943,
+      "test_onay_orani": 0.653,
+      "test_onaylananda_temerrut": 0.11434405308831036,
+      "test_kar": 1230.0
+    },
+    {
+      "model": "LightGBM",
+      "dogrulama_auc": 0.7778381347351127,
+      "dogrulama_gini": 0.5556762694702253,
+      "dogrulama_ks": 0.41198512321500597,
+      "dogrulama_brier": 0.13747229211040018,
+      "test_auc": 0.7896571414841081,
+      "test_gini": 0.5793142829682163,
+      "test_ks": 0.450404454327325,
+      "test_brier": 0.13143300431305163,
+      "test_onay_orani": 0.49516666666666664,
+      "test_onaylananda_temerrut": 0.08751262201279031,
+      "test_kar": 1411.0
+    },
+    {
+      "model": "LightGBM + korunan özellikler",
+      "dogrulama_auc": 0.7792403118751583,
+      "dogrulama_gini": 0.5584806237503166,
+      "dogrulama_ks": 0.41688459945064327,
+      "dogrulama_brier": 0.13714485620525527,
+      "test_auc": 0.7912525110581705,
+      "test_gini": 0.582505022116341,
+      "test_ks": 0.4481975774829864,
+      "test_brier": 0.13113061579876187,
+      "test_onay_orani": 0.5568333333333333,
+      "test_onaylananda_temerrut": 0.09099072134091589,
+      "test_kar": 1517.0
+    }
+  ],
+  "puan_esigi": 543.2,
+  "skorkarti_ozellikler": [
+    "PAY_1",
+    "gecikme_ay_sayisi",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "LIMIT_BAL",
+    "PAY_AMT1",
+    "odeme_orani",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT6",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "kullanim_orani",
+    "fatura_egilimi"
+  ],
+  "iv": {
+    "PAY_1": 0.8876,
+    "gecikme_ay_sayisi": 0.8864,
+    "en_uzun_gecikme": 0.7815,
+    "PAY_2": 0.5502,
+    "PAY_3": 0.4119,
+    "PAY_4": 0.3689,
+    "PAY_5": 0.3449,
+    "PAY_6": 0.2984,
+    "LIMIT_BAL": 0.1884,
+    "PAY_AMT1": 0.1608,
+    "odeme_orani": 0.1444,
+    "PAY_AMT2": 0.1408,
+    "PAY_AMT3": 0.1213,
+    "PAY_AMT6": 0.0848,
+    "PAY_AMT4": 0.0813,
+    "PAY_AMT5": 0.0764,
+    "kullanim_orani": 0.0602,
+    "fatura_egilimi": 0.0599,
+    "EDUCATION": 0.0143,
+    "BILL_AMT6": 0.0061,
+    "BILL_AMT1": 0.006,
+    "BILL_AMT2": 0.0046,
+    "BILL_AMT3": 0.0044,
+    "BILL_AMT5": 0.0033,
+    "BILL_AMT4": 0.0028
+  },
+  "onay_orani_dengesi": {
+    "skor_karti": {
+      "Cinsiyet": 0.889,
+      "Medeni hal": 0.943,
+      "Yaş": 0.71
+    },
+    "lgbm_korunan": {
+      "Cinsiyet": 0.915,
+      "Medeni hal": 0.925,
+      "Yaş": 0.875
+    }
+  }
+}
